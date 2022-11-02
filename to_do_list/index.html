@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="shortcut icon" href="#">
+    <title>To do</title>
+</head>
+<body>
+    <h1>To do:</h1>
+
+    <div class="container_input">
+        <input type="text" id="task" name="task" placeholder="to do..." onkeyup="addTask(event)">
+    </div>
+    <div class="container_intro" id="container_intro">
+        <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+        <div class="container_text">
+            <h2>Add your taks here</h2>
+            <p>What do you want to do today?</p>
+        </div>
+    </div>
+
+    <div class="container_tasks" id="container_tasks">
+        <ul class="list_tasks" id="list_tasks"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 2em;
+    font-size: 3rem;
+}
+
+.container_input {
+    width: 100%;
+    text-align: center;
+}
+
+.container_input input {
+    width: 20%;
+    padding: .9em .4em;
+}
+
+.container_intro {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+.container_intro .fa-solid {
+    font-size: 2.6rem;
+    margin-bottom: .4em;
+}
+
+.container_intro h2 {
+    font-size: 2rem;
+}
+
+.container_intro p {
+    font-size: 1.3rem;
+    margin: .5em 0;
+}
+
+.container_tasks {
+    width: 30%;
+    padding: 1em;
+    border: 1px solid #000;
+    margin: 2em auto;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.list_tasks {
+    padding: .2em;
+}
+
+li {
+    padding: .3em .2em;
+}
+
+li:hover {
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+button {
+    float: right;
+    margin: .2em .3em;
+    padding: .1em .4em;
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    color: #fff;
+    opacity: .4;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:focus {
+    outline: none;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .container_input input {
+        width: 70%;
+        padding: 1.1em .7em;
+    }
+
+    .container_tasks {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: .2em .6em;
+    }
+}
